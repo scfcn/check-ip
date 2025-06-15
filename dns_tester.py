@@ -34,22 +34,8 @@ DNS_APIS = [
         "parser": lambda data: [answer["data"] for answer in data.get("Answer", []) if answer["type"] == 1]
     },
     {
-        "name": "Quad9",
-        "url": "https://dns.quad9.net:5053/dns-query",
-        "params": {"name": "", "type": "A"},
-        "headers": {"Accept": "application/dns-json"},
-        "parser": lambda data: [answer["data"] for answer in data.get("Answer", []) if answer["type"] == 1]
-    },
-    {
         "name": "AliDNS",
         "url": "https://dns.alidns.com/resolve",
-        "params": {"name": "", "type": "A"},
-        "headers": {"Accept": "application/dns-json"},
-        "parser": lambda data: [answer["data"] for answer in data.get("Answer", []) if answer["type"] == 1]
-    },
-    {
-        "name": "DNSPod",
-        "url": "https://doh.pub/dns-query",
         "params": {"name": "", "type": "A"},
         "headers": {"Accept": "application/dns-json"},
         "parser": lambda data: [answer["data"] for answer in data.get("Answer", []) if answer["type"] == 1]
