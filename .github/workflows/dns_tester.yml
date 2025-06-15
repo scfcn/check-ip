@@ -41,7 +41,7 @@ jobs:
           name: dns-test-results
           path: results
 
-      - name: Commit and push results
+      - name: Commit and push results to main
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -51,4 +51,24 @@ jobs:
           else
             git commit -m "Update DNS test results"
             git push
+          fi
+
+      - name: Checkout or create 'page' branch
+        run: |
+          git fetch origin page
+          if git show-ref --verify --quiet refs/heads/page; then
+            git checkout page
+          else
+            git checkout -b page
+          fi
+
+      - name: Copy index.html to 'page' branch
+        run: |
+          cp results/index.html .
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit in 'page' branch."
+          else
+            git commit -m "Update index.html in 'page' branch"
+            git push origin page
           fi
