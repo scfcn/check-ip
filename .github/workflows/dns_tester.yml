@@ -55,11 +55,12 @@ jobs:
 
       - name: Checkout or create 'page' branch
         run: |
-          git fetch origin page
+          git fetch origin page || true
           if git show-ref --verify --quiet refs/heads/page; then
             git checkout page
           else
             git checkout -b page
+            git push -u origin page
           fi
 
       - name: Copy index.html to 'page' branch
