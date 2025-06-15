@@ -1,0 +1,46 @@
+{
+  "domain": "dh.govs.xin",
+  "total_ips": 1,
+  "success_ips": [],
+  "timeout_ips": [
+    "154.12.16.104"
+  ],
+  "blacklisted_ips": [],
+  "test_details": [
+    {
+      "ip": "154.12.16.104",
+      "stages": [
+        {
+          "name": "初始PING",
+          "attempts": 1,
+          "result": "timeout"
+        },
+        {
+          "name": "PING重试(3次)",
+          "attempts": 3,
+          "result": "timeout"
+        },
+        {
+          "name": "API验证",
+          "attempts": 4,
+          "api1": {
+            "status": "failed",
+            "api": "API1",
+            "attempt": 1,
+            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=154.12.16.104&t=1749963546 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f47134ddac0>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
+          },
+          "api2": {
+            "status": "failed",
+            "api": "API2",
+            "attempt": 1,
+            "reason": "HTTP 404",
+            "response_time": 2290
+          }
+        }
+      ],
+      "timestamp": 1749963538.574287
+    }
+  ],
+  "test_time": 10.873604536056519,
+  "timestamp": "2025-06-15T04:59:09.447706"
+}
