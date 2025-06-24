@@ -1,9 +1,9 @@
 {
-  "45.138.70.107": {
+  "154.9.26.72": {
     "status": "timeout",
-    "timestamp": 1750641426.5909624,
+    "timestamp": 1750727593.945673,
     "details": {
-      "ip": "45.138.70.107",
+      "ip": "154.9.26.72",
       "stages": [
         {
           "name": "\u521d\u59cbPING",
@@ -22,23 +22,23 @@
             "status": "failed",
             "api": "API1",
             "attempt": 1,
-            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=45.138.70.107&t=1750641434 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f7f69c250a0>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
+            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=154.9.26.72&t=1750727602 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7fac7d368430>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
           },
           "api2": {
             "status": "failed",
             "api": "API2",
             "attempt": 1,
             "reason": "HTTP 404",
-            "response_time": 1581
+            "response_time": 1709
           }
         }
       ],
-      "timestamp": 1750641426.5909624
+      "timestamp": 1750727593.945673
     }
   },
   "46.3.112.16": {
     "status": "timeout",
-    "timestamp": 1750641437.6782856,
+    "timestamp": 1750727605.6881459,
     "details": {
       "ip": "46.3.112.16",
       "stages": [
@@ -59,18 +59,18 @@
             "status": "failed",
             "api": "API1",
             "attempt": 1,
-            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=46.3.112.16&t=1750641445 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f7f69c21d90>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
+            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=46.3.112.16&t=1750727613 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7fac7d35c700>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
           },
           "api2": {
             "status": "failed",
             "api": "API2",
             "attempt": 1,
             "reason": "HTTP 404",
-            "response_time": 1605
+            "response_time": 3742
           }
         }
       ],
-      "timestamp": 1750641437.6782856
+      "timestamp": 1750727605.6881459
     }
   }
 }
