@@ -1,9 +1,9 @@
 {
-  "154.29.148.16": {
+  "13.230.89.16": {
     "status": "timeout",
-    "timestamp": 1751677818.6967297,
+    "timestamp": 1751764784.0187654,
     "details": {
-      "ip": "154.29.148.16",
+      "ip": "13.230.89.16",
       "stages": [
         {
           "name": "\u521d\u59cbPING",
@@ -22,18 +22,18 @@
             "status": "failed",
             "api": "API1",
             "attempt": 1,
-            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=154.29.148.16&t=1751677826 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f7bf69632e0>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
+            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=13.230.89.16&t=1751764792 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f276e468310>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
           },
           "api2": {
             "status": "failed",
             "api": "API2",
             "attempt": 1,
             "reason": "HTTP 404",
-            "response_time": 2235
+            "response_time": 5244
           }
         }
       ],
-      "timestamp": 1751677818.6967297
+      "timestamp": 1751764784.0187654
     }
   }
 }
