@@ -1,15 +1,14 @@
 {
   "domain": "icp.wudu.ltd",
-  "total_ips": 2,
+  "total_ips": 1,
   "success_ips": [],
   "timeout_ips": [
-    "43.159.98.14",
-    "43.159.99.11"
+    "192.151.243.196"
   ],
   "blacklisted_ips": [],
   "test_details": [
     {
-      "ip": "43.159.98.14",
+      "ip": "192.151.243.196",
       "stages": [
         {
           "name": "初始PING",
@@ -28,53 +27,20 @@
             "status": "failed",
             "api": "API1",
             "attempt": 1,
-            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=43.159.98.14&t=1752110079 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f5b5bbabb20>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
+            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=192.151.243.196&t=1752196531 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7fb675783be0>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
           },
           "api2": {
             "status": "failed",
             "api": "API2",
             "attempt": 1,
             "reason": "HTTP 404",
-            "response_time": 2099
+            "response_time": 2191
           }
         }
       ],
-      "timestamp": 1752110071.2120779
-    },
-    {
-      "ip": "43.159.99.11",
-      "stages": [
-        {
-          "name": "初始PING",
-          "attempts": 1,
-          "result": "timeout"
-        },
-        {
-          "name": "PING重试(3次)",
-          "attempts": 3,
-          "result": "timeout"
-        },
-        {
-          "name": "API验证",
-          "attempts": 4,
-          "api1": {
-            "status": "failed",
-            "api": "API1",
-            "attempt": 1,
-            "reason": "HTTPSConnectionPool(host='api.oioweb.cn', port=443): Max retries exceeded with url: /api/http/ping?url=43.159.99.11&t=1752110079 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f5b5bb9f040>: Failed to resolve 'api.oioweb.cn' ([Errno -2] Name or service not known)\"))"
-          },
-          "api2": {
-            "status": "failed",
-            "api": "API2",
-            "attempt": 1,
-            "reason": "HTTP 404",
-            "response_time": 2894
-          }
-        }
-      ],
-      "timestamp": 1752110071.2123024
+      "timestamp": 1752196523.143158
     }
   ],
-  "test_time": 11.721376180648804,
-  "timestamp": "2025-07-10T01:14:42.913295"
+  "test_time": 10.829618215560913,
+  "timestamp": "2025-07-11T01:15:33.952744"
 }
